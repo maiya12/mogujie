@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/goods.min.css">
+    <!-- 引入 swiper的css样式 -->
+    <link rel="stylesheet" href="../swiper-master/package/swiper-bundle.min.css">
+    <!-- 分页样式 -->
+    <link rel="stylesheet" href="../jquery-pagination/pagination.css">
+    <script src="../js/utils.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div class="header clearFix">
+        <div class="header_top">
+            <ul>
+                <li>
+
+                    <a href="./index.html"> <i class="iconfont icon-shouye1"></i> 首页</a>
+                </li>
+                <li>
+
+                    <a href="./goods_list.html"> <i class="iconfont icon-shouye"></i> 商城</a>
+                </li>
+                <li>
+                    <a href="">我的订单</a>
+                </li>
+                <li>
+                    <a href="" class="header_a4">关于我们 <span class="iconfont icon-xiangxia"></span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 头部搜索栏 -->
+    <div class="header_nav clearFix">
+        <h1>
+            <i><img src="../img/logo1_03.jpg" alt=""></i>
+            <span><img src="../img/logo_03.jpg" alt=""></span>
+        </h1>
+        <p class="catalogue">
+            <i class="iconfont icon-RectangleCopy">目录</i>
+        </p>
+        <p class="seach">
+            <input type="text" value="复古" class="select">
+            <button class="iconfont icon-sousuo seachBtn"></button>
+        </p>
+        <div class="header_nav_list clearFix">
+            <div>
+                <p class="iconfont icon-xiaoxi1"></p> 消息
+            </div>
+            <div>
+                <p class="iconfont icon-shoucang "></p> 收藏
+            </div>
+            <div>
+                <p class="iconfont icon-icon4"></p> <a href="../html/car.html">购物车</a>
+            </div>
+            <div>
+                <p class="iconfont icon-1xiazaiappdingyuegongzhonghaobai"></p> 下载App
+            </div>
+
+        </div>
+        <p class="header_login">
+            <i class="iconfont icon-denglu "></i>
+            <a href="./login.html">登录</a>
+        </p>
+
+    </div>
+    <!-- 头部搜索固定栏 -->
+    <div class="top_search">
+        <div class="header_nav clearFix header_nav2">
+            <h1>
+                <i><img src="../img/logo1_03.jpg" alt=""></i>
+                <span><img src="../img/logo_03.jpg" alt=""></span>
+            </h1>
+            <p class="catalogue">
+                <i class="iconfont icon-RectangleCopy">目录</i>
+            </p>
+            <p class="seach">
+                <input type="text" value="复古" class="select">
+                <button class="iconfont icon-sousuo seachBtn"></button>
+            </p>
+            <div class="header_nav_list clearFix">
+                <div>
+                    <p class="iconfont icon-xiaoxi1"></p> 消息
+                </div>
+                <div>
+                    <p class="iconfont icon-shoucang "></p> 收藏
+                </div>
+                <div>
+                    <p class="iconfont icon-icon4"></p> <a href="../html/car.html">购物车</a>
+                </div>
+                <div>
+                    <p class="iconfont icon-1xiazaiappdingyuegongzhonghaobai"></p> 下载App
+                </div>
+
+            </div>
+            <p class="header_login">
+                <i class="iconfont icon-denglu "></i>
+                <a href="login.html">登录</a>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="content ">
+
+        <!-- 头部价格导航栏 -->
+        <div class="content_nav_bot">
+            <ul>
+                <li class="synthesis"><i>综合</i></li>
+                <li class="sales"><i>销量</i></li>
+                <li class="priceSorted"><i>价格</i></li>
+                <li class=" clearFix">
+                    <input type="text" value="￥">
+                    <p>-</p>
+                    <input type="text" value="￥">
+                    <button>确定</button>
+                    <span>70-85</span>
+                    <span>85-125</span>
+                    <span>125-235</span>
+                </li>
+            </ul>
+
+        </div>
+        <div class="content_product clearFix">
+            <!-- 渲染数据 -->
+            <!-- <div class="product">
+                <img src="../img/product1_03.jpg" alt="" class="product_img">
+                <div class="product_detail">
+                    <h4>
+                        韩国2020秋新款法式少女小香风显瘦连衣裙少女心打底裙子潮女
+                    </h4>
+                    <p>
+                        <span>￥69.3</span><a>￥99</a>
+                        <i><img src="../img/star_03.jpg" alt="">574</i>
+
+                    </p>
+                </div>
+
+            </div> -->
+
+        </div>
+        <div class="m-style"></div>
+    </div>
+
+
+    <script src="../swiper-master/package/swiper-bundle.min.js"></script>
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../jq_cookie/jquery.cookie.js"></script>
+    <!-- 分页插件 -->
+    <script src="../jquery-pagination/jquery.pagination.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/select.js"></script>
+    <script>
+        // logo的链接
+        $('.header_nav h1').click(function() {
+            location.href = './index.html'
+        })
+
+        //  吸顶效果 
+        if ($.cookie('login')) {
+            $('.header_login a').text("欢迎" + $.cookie('login'))
+            console.log(1);
+        }
+        $(document).scroll(function() {
+            var scroH = $(document).scrollTop(); //滚动高度
+
+            if (scroH > 500) { //距离顶部大于100px时
+                $(".top_search").css("display", "block");
+            } else {
+                $(".top_search").css("display", "none");
+            }
+        });
+        //   综合排序
+        $('.synthesis').click(function() {
+            select('../api/selectData.php');
+        })
+
+
+        // 搜索按钮
+        $('.seachBtn').click(function() {
+            console.log(1);
+
+            select('../api/selectData.php');
+        })
+
+        //   销量排序
+        $('.sales').click(function() {
+                select('../api/salesSel.php');
+            })
+            //   价格排序
+
+        $('.priceSorted').click(function() {
+            select('../api/priceSel.php');
+        })
+    </script>
+</body>
+
+</html>

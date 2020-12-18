@@ -1,0 +1,319 @@
+.header {
+  width: 1236px;
+  height: 70px;
+  margin: auto;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  width: 130px;
+  height: 37px;
+  margin-right: 20px;
+  float: left;
+}
+
+.header h1 i {
+  float: left;
+}
+
+.header h1 span {
+  margin-top: 4px;
+  vertical-align: middle;
+  float: right;
+}
+
+.header p {
+  width: 864px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+  background: #ffefef;
+  border: 1px solid #ffc0cc;
+  text-indent: 20px;
+  float: left;
+}
+
+.banner {
+  height: 537px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 1980px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner .login {
+  width: 400px;
+  height: 426px;
+  position: absolute;
+  top: 60px;
+  right: 210px;
+}
+
+.banner .login .login_top {
+  width: 400px;
+  height: 360px;
+  background: #feecea;
+  border-radius: 10px;
+  padding: 28px 66px;
+}
+
+.banner .login .login_top #p1 {
+  width: 100%;
+  height: 22px;
+  margin-bottom: 27px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.banner .login .login_top #p1 i {
+  float: left;
+  border-bottom: 3px solid #fe4360;
+}
+
+.banner .login .login_top #p1 span {
+  float: right;
+}
+
+.banner .login .login_top .login_screen {
+  display: none;
+}
+
+.banner .login .login_top .login_screen .p2 {
+  width: 100%;
+  height: 40px;
+  color: #817f7f;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.banner .login .login_top .login_screen .p2 input {
+  width: 100%;
+  height: 40px;
+  text-indent: 16px;
+  border-radius: 20px;
+  border: 1px solid #d2bfbe;
+  outline: none;
+}
+
+.banner .login .login_top .login_screen .p3 {
+  width: 100%;
+  height: 40px;
+}
+
+.banner .login .login_top .login_screen .p3 #login_btn {
+  width: 100%;
+  height: 40px;
+  background: #fe4360;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  outline: none;
+}
+
+.banner .login .login_top .login_screen .p4 {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+.banner .login .login_top .login_screen .p4 a {
+  font-size: 12px;
+  float: right;
+  text-decoration: underline;
+}
+
+.banner .login .login_top .login_screen .p5 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.banner .login .login_top .login_screen .p5 a {
+  line-height: 30px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.banner .login .login_top .login_ma {
+  text-align: center;
+  display: block;
+}
+
+.banner .login .login_top .login_ma .p_title {
+  font-size: 12px;
+  height: 20x;
+  line-height: 20px;
+}
+
+.banner .login .login_top .login_ma .p_img {
+  height: 215px;
+}
+
+.banner .login .login_top .login_ma .p_img img {
+  width: 165px;
+  height: 165px;
+}
+
+.banner .login .login_top .login_ma button {
+  width: 168px;
+  height: 28px;
+  color: #fe4360;
+  border: 1px solid #fe4360;
+  border-radius: 14px;
+  background: #feecea;
+}
+
+.banner .login .login_top .register_screen {
+  display: none;
+}
+
+.banner .login .login_top .register_screen .p2 {
+  width: 100%;
+  height: 40px;
+  color: #817f7f;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.banner .login .login_top .register_screen .p2 input {
+  width: 100%;
+  height: 40px;
+  text-indent: 16px;
+  border-radius: 20px;
+  border: 1px solid #d2bfbe;
+  outline: none;
+}
+
+.banner .login .login_top .register_screen .p3 {
+  width: 100%;
+  height: 40px;
+}
+
+.banner .login .login_top .register_screen .p3 #register_btn {
+  width: 100%;
+  height: 40px;
+  background: #fe4360;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  outline: none;
+}
+
+.banner .login .login_bot {
+  width: 400px;
+  height: 60px;
+  margin-top: 6px;
+  border-radius: 10px;
+  background: #feecea;
+  padding: 14px 30px;
+}
+
+.banner .login .login_bot p {
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.banner .login .login_bot p span {
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  margin-right: 6px;
+}
+
+.banner .login .login_bot p .wei {
+  background: url(../img/weiChat_03.jpg);
+  background-size: 100% 100%;
+}
+
+.banner .login .login_bot p .qq {
+  background: url(../img/qChat_03.jpg);
+  background-size: 100% 100%;
+}
+
+.footer {
+  width: 100%;
+  background: #f5f5f5;
+  padding-top: 84px;
+}
+
+.footer .footer_content {
+  width: 1236px;
+  margin: auto;
+}
+
+.footer .footer_content .footer_nav {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.footer .footer_content .footer_nav ul {
+  width: 990px;
+  height: 100%;
+  margin: auto;
+}
+
+.footer .footer_content .footer_nav ul li {
+  float: left;
+}
+
+.footer .footer_content .footer_nav ul li a {
+  font-size: 12px;
+  color: #979797;
+  padding: 0 27px;
+  border-right: 1px solid #b1b1de;
+}
+
+.footer .footer_content .footer_line {
+  width: 100%;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.footer .footer_content .footer_line .line {
+  display: inline-block;
+  width: 410px;
+  border-top: 2px solid #e0e0e0;
+  vertical-align: 5px;
+}
+
+.footer .footer_content .footer_line .text {
+  display: inline-block;
+  padding: 0 22px;
+  font-size: 12px;
+  color: #929292;
+}
+
+.footer .footer_content .footer_bot {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #b6b6b6;
+}
+
+.footer .footer_content .footer_bot p {
+  line-height: 25px;
+}
+
+.footer .footer_content .footer_bot p i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.footer .footer_content .footer_bot p i img {
+  width: 100%;
+  height: 100%;
+}
